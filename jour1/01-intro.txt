@@ -1,0 +1,10 @@
+
+
+1 Typescript est sur ensemble de Javascript
+
+2 Transpiler Typescript en Javascript
+
+const j = 1 ; => compilation pour le processeur => 01010101010
+const j = 1 ; => transpilation en un autre langage PHP =>  $j = 1 ;
+
+
