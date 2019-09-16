@@ -1,0 +1,8 @@
+
+installer typescript :
+npm i -g typescript
+
+
+vérifier que le transpileur typescript est opérationnel sur votre ordinateur
+tsc -v
+
