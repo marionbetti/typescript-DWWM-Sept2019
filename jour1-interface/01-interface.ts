@@ -1,4 +1,6 @@
 
+
+export {}
 // fonction avec 7 paramètres 
 function more(a,b,c,d,e,f,g)
 {
@@ -31,3 +33,16 @@ more2(
 )
 //tsc 01-interface.ts -w
 
+
+class jQuery {
+
+    addClass(index : number , currentClassName : string) : string
+    {
+        ///traitements
+        return "";
+    }
+}
+
+const $ = new jQuery();
+
+$.addClass(2, "hello");

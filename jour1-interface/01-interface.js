@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 // fonction avec 7 paramètres 
 function more(a, b, c, d, e, f, g) {
 }
@@ -12,3 +14,14 @@ more2({
     texteMore: "Lire la suite ..."
 });
 //tsc 01-interface.ts -w
+var jQuery = /** @class */ (function () {
+    function jQuery() {
+    }
+    jQuery.prototype.addClass = function (index, currentClassName) {
+        ///traitements
+        return "";
+    };
+    return jQuery;
+}());
+var $ = new jQuery();
+$.addClass(2, "hello");
