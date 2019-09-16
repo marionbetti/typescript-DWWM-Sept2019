@@ -13,4 +13,4 @@ c = "autre texte"
 
 let d = false ;
 d = true ;
-d = "texte final"
+//d = "texte final"
