@@ -1,0 +1,16 @@
+// ce fichier ne va être utilisé que par le shell et uniquement la commande
+// tsc
+// ce fichier permet d'éviter d'avoir à saisir des commandes à rallonge (commande verbeuse)
+// tsc 03-hello-world.ts --strict --removeComment --target es6
+
+{
+    "compilerOptions": {
+        "strict" : true,
+        "removeComments": true ,
+        "target": "es6",
+        "watch": true
+    },
+    "files" : [
+        "03-hello-world.ts"
+    ]
+}
