@@ -8,3 +8,11 @@ const j = 1 ; => compilation pour le processeur => 01010101010
 const j = 1 ; => transpilation en un autre langage PHP =>  $j = 1 ;
 
 
+-----------------------------
+
+nous allons créer des fichiers .ts convertit en fichier .js
+
+
+Typescript : Javascript Typé
+
+
