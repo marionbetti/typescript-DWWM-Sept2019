@@ -1,2 +1,2 @@
-// écrire du Javascript natif
+"use strict";
 console.log("Hello World !");
