@@ -32,3 +32,18 @@ class Phone
 const iphone = new Phone('060606060606', "5S")
 
 iphone.vente();
+
+// si rien devant une méthode / une propriété d'une class = public
+// elle est utilisable dans et hors de la  class
+
+// si vous mettez private devant  une méthode / une propriété d'une class 
+// propriete / méthode ne peut être utilisée que DANS la class
+// sécurité éviter que un script puisse réaliser des actions non voulues
+
+// protected : dans le cas ou la class dispose d'un héritier 
+// la class enfant peut utiliser  une méthode / une propriété protected
+
+// protection lorsque l'on a un projet avec des centaines de class 
+// qui communiquent les uns avec les autres 
+// ce qui rend le risque de collision (override = surcharge = modification)
+// plus grand
