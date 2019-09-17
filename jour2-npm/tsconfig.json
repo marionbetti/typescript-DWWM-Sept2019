@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+      "strict" : true,
+      "target" : "es3",
+      "removeComments": true,
+      "sourceMap": true,
+      "watch": true
+  },
+  "files": [
+      "app.ts",
+      "html-lib.ts",
+      "lib.ts"
+  ]
+}
