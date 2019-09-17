@@ -5,8 +5,7 @@ class Ordinateur
 
     constructor(protected marque : string, public processeur: string )
     {
-        this.marque = marque;
-        this.processeur = processeur;
+
     }
 
     log()

@@ -7,8 +7,7 @@ class Ordinateur
     // technique valable uniquement pour la méthode constructor()
     constructor(private marque : string, public processeur: string )
     {
-        this.marque = marque;
-        this.processeur = processeur;
+        
     }
 
     log()

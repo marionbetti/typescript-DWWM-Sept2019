@@ -17,8 +17,6 @@ var Ordinateur = /** @class */ (function () {
     function Ordinateur(marque, processeur) {
         this.marque = marque;
         this.processeur = processeur;
-        this.marque = marque;
-        this.processeur = processeur;
     }
     Ordinateur.prototype.log = function () {
         console.log(this.marque, this.processeur);
