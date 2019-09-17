@@ -20,3 +20,48 @@ méthode pour générer un article dans une page
 <footer><strong>Auteur</strong></footer>
 
 si article n'est pas publié => <p>Erreur 404 page non disponible</p>  */
+
+interface optionArticle{
+    titre : string,
+    contenu :string,
+    auteur : string,
+    etat :boolean
+}
+
+class Article
+{
+    constructor(private article : optionArticle)
+    {}
+
+    generateArticleHome()
+    {
+        let html = `
+        <h2>${this.article.titre}</h2>
+        <p>${this.article.contenu.substr(0,30)}</p>
+        <footer><a href="#">lire la suite ... </a></footer>
+        `;
+        html = ( this.article.etat == false ) ? "":  html;
+        console.log(html);
+    }
+
+    generateArticlePage()
+    {
+        let html = `
+        <h2>${this.article.titre}</h2>
+        <p>${this.article.contenu}</p>
+        <footer><strong>${this.article.auteur}</strong></footer>
+        `;
+        html = ( this.article.etat == false ) ? "<p>Erreur 404 page non disponible</p>":  html;
+        console.log(html);
+    }
+}
+
+const a = new Article({
+    titre:"article 1",
+    contenu: "lorem ipsum",
+    auteur: "moi",
+    etat: false
+})
+
+a.generateArticleHome();
+a.generateArticlePage();
