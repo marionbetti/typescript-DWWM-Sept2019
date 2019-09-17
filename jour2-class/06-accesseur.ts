@@ -1,7 +1,7 @@
 class Phone
 {
-    numero:string;
-    modele:string;
+    private numero:string;
+    protected modele:string;
     dtAchat:Date ;
 
     constructor( num:string, modele:string, dt?:Date)
@@ -21,7 +21,14 @@ class Phone
         }
         console.log(produit);
     }
+
+    rachat()
+    {
+        this.numero = "20202";
+        const num = this.numero
+    }
 }
 
 const iphone = new Phone('060606060606', "5S")
+
 iphone.vente();
