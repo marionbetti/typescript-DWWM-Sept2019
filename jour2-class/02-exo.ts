@@ -12,7 +12,7 @@
 // afficher dans la console la chaine suivante :
 //<section id="la variable id de la class Fenetre">
 //    <header>la variable titre de la class Fenetre</header>
-//    <div>la variable de la class Fenetre</div>
+//    <div>la variable body de la class Fenetre</div>
 //</section>
 
 // créer la fenêtre titre Panneau de configuration / body liste <ul><li> / id config
