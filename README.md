@@ -2,4 +2,4 @@
 
 ## support de cours 
 
-=> http://formation.webdevpro.net/typescript/ <br>
+=> <a href="http://formation.webdevpro.net/typescript/" target="_blank">http://formation.webdevpro.net/typescript/</a> <br>
