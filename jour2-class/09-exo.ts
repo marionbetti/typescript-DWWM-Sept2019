@@ -37,7 +37,7 @@ class Article
     {
         let html = `
         <h2>${this.article.titre}</h2>
-        <p>${this.article.contenu.substr(0,30)}</p>
+        <p>${this.texte30(this.article.contenu)}</p>
         <footer><a href="#">lire la suite ... </a></footer>
         `;
         html = ( this.article.etat == false ) ? "":  html;
@@ -53,6 +53,11 @@ class Article
         `;
         html = ( this.article.etat == false ) ? "<p>Erreur 404 page non disponible</p>":  html;
         console.log(html);
+    }
+
+    private texte30(texte :string)
+    {
+        return texte.substr(0,30);
     }
 }
 
