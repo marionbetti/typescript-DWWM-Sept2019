@@ -13,4 +13,13 @@ export function puissance (x:number, pow:number) : number
     return Math.pow(x,pow);
 }
 
+export interface Article{
+    id:number,
+    titre:string,
+    contenu:string
+}
 
+
+export class Voiture{
+    
+}
