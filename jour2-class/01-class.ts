@@ -7,6 +7,7 @@
 //           y : chiffre
 
 // 1ère manière écrire 
+export{}
 
 interface optionDessin {
     x:number,
