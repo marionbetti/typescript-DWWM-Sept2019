@@ -1,11 +1,13 @@
 "use strict";
 exports.__esModule = true;
-var lib_1 = require("./lib");
-console.log(lib_1.puissance(2, 6));
+var lib = require("./lib");
+var html_lib_1 = require("./html-lib");
+console.log(lib.puissance(2, 6));
 var a = {
     id: 2,
     titre: "nouvel article",
     contenu: "lorem ipsum"
 };
-var v = new lib_1.Voiture();
+var v = new lib.Voiture();
+html_lib_1["default"]();
 //# sourceMappingURL=app.js.map

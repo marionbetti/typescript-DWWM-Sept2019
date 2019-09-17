@@ -1,13 +1,19 @@
-import { puissance , Article , Voiture } from "./lib" ;
+//import { puissance , Article , Voiture } from "./lib" ;
+import * as lib from "./lib" ;
 
 // par rapport à Node const { puissance } = require ("./lib");
 
-console.log(puissance(2,6));
+import genererMenu from "./html-lib" ;
+// pas besoin d'écrire import {genererMenu} from "./html-lib" ;
 
-const a : Article = {
+console.log(lib.puissance(2,6));
+
+const a : lib.Article = {
     id: 2,
     titre : "nouvel article",
     contenu : "lorem ipsum"
 }
 
-const v = new Voiture();
+const v = new lib.Voiture();
+
+genererMenu();
