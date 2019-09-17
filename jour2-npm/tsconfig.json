@@ -8,7 +8,6 @@
   },
   "files": [
       "app.ts",
-      "html-lib.ts",
       "lib.ts"
   ]
 }
