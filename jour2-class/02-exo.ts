@@ -23,15 +23,22 @@
 class Fenetre
 {
     titre : string;
-    body : string;
+
     id : string;
+    isConnected : boolean ;
 
     afficher() :void
     {
+        let btn = '<ul>';
+            btn += (this.isConnected == true) ? '<li><a href="admin.html">Admin</a></li>' : '' ;
+            btn += (this.isConnected == false) ? '<li><a href="login.html">login</a></li>': '' ;
+            btn += (this.isConnected == true) ? '<li><a href="logout.html">déconnexion</a></li>': '' ;
+            btn += '</ul>';
+
         const html = `
             <section id="${this.id}">
                 <header>${this.titre}</header>
-                <div>${this.body}</div>
+                <div>${btn}</div>
             </section>
         `;
         console.log(html) ;
@@ -40,13 +47,8 @@ class Fenetre
 
 const f1 = new Fenetre();
 f1.titre = "Panneau de configuration";
-f1.body = `
-<ul>
-    <li><a href="admin.html">Admin</a></li>
-    <li><a href="login.html">login</a></li>
-    <li><a href="logout.html">déconnexion</a></li>
-</ul>
-`;
+
 f1.id= "config" ;
+f1.isConnected = true;
 f1.afficher();
 //tsc 02-exo.ts -w
